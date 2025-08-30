@@ -1,5 +1,3 @@
-# NettePHPFramework
-
 Веб-проект Nette
 ==================
 
