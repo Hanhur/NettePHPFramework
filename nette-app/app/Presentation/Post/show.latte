@@ -1,0 +1,15 @@
+{block content}
+    <p><a n:href="Home:default">← назад к списку постов</a></p>
+
+    <div class="date">{$post->created_at|date:'F j, Y'}</div>
+
+    <h1 n:block="title">{$post->title}</h1>
+
+    {* {block title}<h1>{$post->title}</h1>{/block} *}
+
+    <div class="post">{$post->content}</div>
+
+    <h2>Добавьте новый комментарий</h2>
+
+    {control commentForm}
+{/block}
