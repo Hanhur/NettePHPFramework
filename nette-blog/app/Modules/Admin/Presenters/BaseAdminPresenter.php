@@ -1,12 +1,15 @@
 <?php
 
-namespace App\Modules\Admin\Presenters;
+    namespace App\Modules\Admin\Presenters;
 
-use Nette\Application\UI\Presenter;
+    use Nette\Application\UI\Presenter;
 
-// class BaseAdminPresenters extends Presenter
-// {
-
-// }
-
-?>
+    class BaseAdminPresenter extends Presenter
+    {
+        public function startup()
+        {
+            parent::startup();
+            $this->layout = 'layout';
+        }
+    }
+?>  
