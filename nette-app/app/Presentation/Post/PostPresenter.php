@@ -20,6 +20,7 @@
             }
 
             $this->template->post = $post;
+            $this->template->comments = $post->related('comments', 'post_id')->order('created_at');
         }
 
         protected function createComponentCommentForm(): Form
@@ -34,8 +35,24 @@
 
             $form->addSubmit('send', 'Опубликовать комментарий');
 
+            $form->onSuccess[] = $this->commentFormSucceeded(...);
+
             return $form;
         }
 
+        private function commentFormSucceeded(\stdClass $data): void
+        {
+            $id = $this->getParameter('id');
+
+            $this->database->table('comments')->insert([
+                'post_id' => $id,
+                'name' => $data->name,
+                'email' => $data->email,
+                'content' => $data->content,
+            ]);
+
+            $this->flashMessage('Спасибо за комментарий', 'success');
+            $this->redirect('this');
+        }
     }
 ?>

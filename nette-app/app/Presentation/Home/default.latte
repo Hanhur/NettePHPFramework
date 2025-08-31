@@ -16,6 +16,11 @@
 
 {block content}
 	<h1>Мой блог</h1>
+	{* Ссылка на создание постов *}
+	<a n:href="Edit:create">Написать новый пост</a>
+
+	{* Скрытие ссылок *}
+	<a n:href="Edit:create" n:if="$user->isLoggedIn()">Создать пост</a>
 
 	<div n:foreach="$posts as $post" class="post">
 		<div class="date">{$post->created_at|date:'F j, Y'}</div>

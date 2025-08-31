@@ -14,6 +14,16 @@
 <body>
 	<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
 
+	{* Ссылка для входа *}
+	<ul class="navig">
+		<li><a n:href="Home:">Статьи</a></li>
+		{if $user->isLoggedIn()}
+			<li><a n:href="Sign:out">Выйти</a></li>
+		{else}
+			<li><a n:href="Sign:in">Войти</a></li>
+		{/if}
+	</ul>
+
 	{include content}
 </body>
 </html>

@@ -5,11 +5,26 @@
 
     <h1 n:block="title">{$post->title}</h1>
 
-    {* {block title}<h1>{$post->title}</h1>{/block} *}
-
     <div class="post">{$post->content}</div>
+
+    <a n:href="Edit:edit $post->id">Редактировать пост</a>
+
+    <a n:href="Edit:create" n:if="$user->isLoggedIn()">Создать пост</a>
 
     <h2>Добавьте новый комментарий</h2>
 
     {control commentForm}
+
+    <h2>Комментарии</h2>
+
+    <div class="comments">
+        {foreach $comments as $comment}
+            <p><b><a href="mailto:{$comment->email}" n:tag-if="$comment->email">
+                {$comment->name}
+            </a></b> написал:</p>
+
+            <div>{$comment->content}</div>
+        {/foreach}
+
+    </div>
 {/block}
