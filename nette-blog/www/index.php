@@ -8,5 +8,3 @@ $bootstrap = new App\Bootstrap;
 $container = $bootstrap->bootWebApplication();
 $application = $container->getByType(Nette\Application\Application::class);
 $application->run();
-
-?>
