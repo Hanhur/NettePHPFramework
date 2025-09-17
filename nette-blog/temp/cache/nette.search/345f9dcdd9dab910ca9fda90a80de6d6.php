@@ -10,7 +10,7 @@ return array (
     'App\\Core\\RouterFactory' => 
     array (
       0 => 'D:\\NettePHPFramework\\nette-blog\\app\\Core\\RouterFactory.php',
-      1 => 1758096373,
+      1 => 1758097131,
     ),
     'App\\Modules\\Admin\\Presenters\\BaseAdminPresenter' => 
     array (
@@ -21,6 +21,11 @@ return array (
     array (
       0 => 'D:\\NettePHPFramework\\nette-blog\\app\\Modules\\Admin\\Presenters\\DashboardPresenter.php',
       1 => 1758095472,
+    ),
+    'App\\Modules\\Admin\\Presenters\\SignPresenter' => 
+    array (
+      0 => 'D:\\NettePHPFramework\\nette-blog\\app\\Modules\\Admin\\Presenters\\SignPresenter.php',
+      1 => 1758099320,
     ),
     'App\\Modules\\Front\\Presenters\\HomePresenter' => 
     array (
