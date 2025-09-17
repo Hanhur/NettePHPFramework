@@ -10,7 +10,22 @@ return array (
     'App\\Core\\RouterFactory' => 
     array (
       0 => 'D:\\NettePHPFramework\\nette-blog\\app\\Core\\RouterFactory.php',
-      1 => 1754528516,
+      1 => 1758097107,
+    ),
+    'App\\Modules\\Admin\\Presenters\\BaseAdminPresenter' => 
+    array (
+      0 => 'D:\\NettePHPFramework\\nette-blog\\app\\Modules\\Admin\\Presenters\\BaseAdminPresenter.php',
+      1 => 1758095277,
+    ),
+    'App\\Modules\\Admin\\Presenters\\DashboardPresenter' => 
+    array (
+      0 => 'D:\\NettePHPFramework\\nette-blog\\app\\Modules\\Admin\\Presenters\\DashboardPresenter.php',
+      1 => 1758095472,
+    ),
+    'App\\Modules\\Front\\Presenters\\HomePresenter' => 
+    array (
+      0 => 'D:\\NettePHPFramework\\nette-blog\\app\\Modules\\Front\\Presenters\\HomePresenter.php',
+      1 => 1758096099,
     ),
     'App\\Presentation\\Accessory\\LatteExtension' => 
     array (
@@ -35,9 +50,15 @@ return array (
   ),
   1 => 
   array (
-    'null' => 1,
-    'App\\Presentation\\Home\\HomeDefaultTemplate' => 1,
-    'App\\Presentation\\Home\\HomeTemplate' => 1,
+    'null' => 3,
+    'App\\Presentation\\Home\\HomeDefaultTemplate' => 3,
+    'App\\Presentation\\Home\\HomeTemplate' => 3,
+    'App\\Presentation\\Front\\Front\\Home\\HomePresenter' => 2,
+    'App\\Presentation\\Front\\Home\\HomePresenter' => 3,
+    'App\\Modules\\Front\\Presenters\\HomeDefaultTemplate' => 3,
+    'App\\Modules\\Front\\Presenters\\HomeTemplate' => 3,
+    'App\\Modules\\Front\\Front\\Presenters\\HomePresenter' => 2,
+    'App\\Modules\\Presenters\\HomePresenter' => 3,
   ),
   2 => 
   array (

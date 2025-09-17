@@ -10,7 +10,22 @@ return array (
     'App\\Core\\RouterFactory' => 
     array (
       0 => 'D:\\NettePHPFramework\\nette-blog\\app\\Core\\RouterFactory.php',
-      1 => 1754528516,
+      1 => 1758096373,
+    ),
+    'App\\Modules\\Admin\\Presenters\\BaseAdminPresenter' => 
+    array (
+      0 => 'D:\\NettePHPFramework\\nette-blog\\app\\Modules\\Admin\\Presenters\\BaseAdminPresenter.php',
+      1 => 1758095277,
+    ),
+    'App\\Modules\\Admin\\Presenters\\DashboardPresenter' => 
+    array (
+      0 => 'D:\\NettePHPFramework\\nette-blog\\app\\Modules\\Admin\\Presenters\\DashboardPresenter.php',
+      1 => 1758095472,
+    ),
+    'App\\Modules\\Front\\Presenters\\HomePresenter' => 
+    array (
+      0 => 'D:\\NettePHPFramework\\nette-blog\\app\\Modules\\Front\\Presenters\\HomePresenter.php',
+      1 => 1758096099,
     ),
     'App\\Presentation\\Accessory\\LatteExtension' => 
     array (
