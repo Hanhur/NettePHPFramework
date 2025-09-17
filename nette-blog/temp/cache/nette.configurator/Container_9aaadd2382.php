@@ -451,7 +451,7 @@ class Container_9aaadd2382 extends Nette\DI\Container
 
 	public function createServiceSecurity__authenticator(): Nette\Security\IAuthenticator
 	{
-		return new Nette\Security\SimpleAuthenticator(['johndoe' => 'secret123'], ['johndoe' => null], ['johndoe' => []]);
+		return new Nette\Security\SimpleAuthenticator(['admin' => 'admin'], ['admin' => null], ['admin' => []]);
 	}
 
 
